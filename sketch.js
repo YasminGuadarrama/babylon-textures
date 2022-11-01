@@ -35,11 +35,11 @@ var createScene = function () {
     scene.clearColor = new BABYLON.Color3.FromHexString('#000');
 
 
-    //create sphere w params (x, y, z, diameter)
-    var s1 = createSphere(-1, 1, -1, 2);
+
+    var b = createBox(0, -2, 2, 4, 4, 4);
 
     //wrap sphere in material from URL file
-    s1.material = fileMat('gold.jpeg', scene);
+    b.material = fileMat('gold.jpeg', scene);
     
     //create sphere
     var s2 = createSphere(2, 2, 0.5, 2);
