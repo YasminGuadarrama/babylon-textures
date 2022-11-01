@@ -39,13 +39,13 @@ var createScene = function () {
     var s1 = createSphere(-1, 1, -1, 2);
 
     //wrap sphere in material from URL file
-    s1.material = fileMat('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.seekpng.com%2Fipng%2Fu2q8r5i1u2u2w7u2_jpg-free-christmas-gift-at-getdrawings-com-free%2F&psig=AOvVaw3SjQh_aLuhm9z0lSw2fzuM&ust=1667363078057000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCODSpdORjPsCFQAAAAAdAAAAABAv', scene);
+    s1.material = fileMat('gold.jpeg', scene);
     
     //create sphere
     var s2 = createSphere(2, 2, 0.5, 2);
 
     //wrap sphere in material from local file
-    s2.material = fileMat('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fyes-i-am-possessive-i-wont-share-in-2021--617345061427356694%2F&psig=AOvVaw113wyXgajnVMtNIQqzHAjk&ust=1667363256365000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPisp6mSjPsCFQAAAAAdAAAAABAJ', scene);
+    s2.material = fileMat('gift.jpeg', scene);
     
     //create box with params x, y, z, width, height, ddepth
     var b1 = createBox(2, -2, 2, 1, 1, 1);
@@ -57,7 +57,7 @@ var createScene = function () {
     var b2 = createBox(0, -2, -1.5, 2, 2, 2);
 
     //wrap box in material from local file
-    b2.material = fileMat('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bankrate.com%2Finvesting%2Fbest-gold-etfs%2F&psig=AOvVaw0YDUL-cjE0o9mzEomgdNCY&ust=1667363310726000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKjD_MCSjPsCFQAAAAAdAAAAABAF', scene);
+    b2.material = fileMat('onlymine.jpeg', scene);
 
     return scene;
 };
